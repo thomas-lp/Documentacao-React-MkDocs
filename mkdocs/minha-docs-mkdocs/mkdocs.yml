@@ -1,0 +1,74 @@
+site_name: Documentação do React - MkDocs
+
+site_url: https://react-mkdocs.com/
+site_description: Documentação do React usando MkDocs para a disciplina de Programação WEB.
+site_author: Thomas Anderson Lopes, Tulio Oliveira Cruz, Lucas Neves Saber Gabriel
+
+repo_name: Documentacao-React-MkDocs
+repo_url: https://github.com/thomas-lp/Documentacao-React-MkDocs
+
+nav:
+  - Início: index.md
+  - Introdução ao React: introducao.md
+  - Configuração do Ambiente: configuracao_ambiente.md
+  - Componentes: componentes.md
+  - JSX: jsx.md
+  - Estado e Ciclo de Vida: estado_ciclo_de_vida.md
+  - Efeitos Colaterais: efeitos_colaterais.md
+  - Roteamento: roteamento.md
+  - Formulários: formularios.md
+  - Gerenciamento de Dados: gerenciamento_dados.md
+  - Boas Práticas: boas_praticas.md
+  - Recursos Adicionais: recursos_adicionais.md
+
+copyright: Copyright &copy; GAC116 - 2024
+
+#theme: readthedocs  # comente essa linha
+
+theme:
+  name: material
+  language: pt-BR
+  palette: 
+    # Paleta quando esta no modo light
+    - scheme: default
+      primary: blue       # cor dos menus principais
+      accent: indigo      # cor dos links 
+      toggle:
+        icon: material/brightness-7 # icone para troca de modo
+        name: Trocar para modo escuro
+    # Paleta quando esta no modo dark
+    - scheme: slate 
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/brightness-4 # icone para troca de modo (escuro)
+        name: Trocar para modo claro
+  favicon: imgs/favicon.ico         # adiciona um favicon no site
+  features:
+    - content.tabs.link             # habilita o vinculo de guias de conteúdo
+    - content.code.copy             # habilita a cópia de códigos da página
+
+markdown_extensions:
+  - tables
+  - abbr                        # usado para definir abreviaturas
+  - admonition                  # usado para definir advertências 
+  - pymdownx.details            # usada para recolher conteúdo
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:         # usada para colorir as tags dos códigos json, python, etc.
+      anchor_linenums: true     # usado para blocos de código
+      line_spans: __span        # usado para blocos de código
+      pygments_lang_class: true # usado para blocos de código
+  - pymdownx.inlinehilite       # usado para blocos de código
+  - pymdownx.snippets           # usado para blocos de código
+  - pymdownx.superfences        # usado para blocos de código
+  - pymdownx.tabbed:            # usado para guias de conteúdo
+      alternate_style: true     # usado para guias de conteúdo
+  - attr_list
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
