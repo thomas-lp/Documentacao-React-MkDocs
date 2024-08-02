@@ -20,7 +20,7 @@ Este repositório contém a documentação técnica detalhada sobre a biblioteca
 
    ```
    cd Documentacao-React-MkDocs
-  ```
+   ```
 
 3. **Instale as Dependências**
 
