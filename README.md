@@ -5,7 +5,7 @@ Bem-vindo ao projeto de documentação do React usando MkDocs!
 Este repositório contém a documentação técnica detalhada sobre a biblioteca React, criada como parte da disciplina de Programação Web. A documentação abrange desde a introdução básica até boas práticas e recursos adicionais, e está estruturada como um site estático gerado com MkDocs.
 
 <div align="center">
-  <img src="imgs/react.gif" alt="React GIF" style="max-width: 100%; height: auto;" />
+  <img src="mkdocs/minha-docs-mkdocs//docs/imgs/react.gif" alt="React GIF" style="max-width: 100%; height: auto;" />
 </div>
 
 ## Como Usar
